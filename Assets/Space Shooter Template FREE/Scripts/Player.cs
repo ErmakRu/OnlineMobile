@@ -2,12 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Photon.Pun;
+using Photon.Realtime;
+
 
 /// <summary>
 /// This script defines which sprite the 'Player" uses and its health.
 /// </summary>
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviourPunCallbacks
+
 {
     public GameObject destructionFX;
 
