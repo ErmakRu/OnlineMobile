@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
+
 
 
 //guns objects in 'Player's' hierarchy
@@ -11,7 +13,8 @@ public class Guns
     [HideInInspector] public ParticleSystem leftGunVFX, rightGunVFX, centralGunVFX; 
 }
 
-public class PlayerShooting : MonoBehaviour {
+public class PlayerShooting : MonoBehaviourPunCallbacks
+{
 
     [Tooltip("shooting frequency. the higher the more frequent")]
     public float fireRate;

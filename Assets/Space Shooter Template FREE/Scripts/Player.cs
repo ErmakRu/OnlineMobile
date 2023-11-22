@@ -35,6 +35,11 @@ public class Player : MonoBehaviourPunCallbacks
         Instantiate(destructionFX, transform.position, Quaternion.identity); //generating destruction visual effect and destroying the 'Player' object
         Destroy(gameObject);
     }
+
+    private void Update()
+    {
+        
+    }
 }
 
 

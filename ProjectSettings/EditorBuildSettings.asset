@@ -11,7 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: db439499ad76b954097b5acce5db0fa7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Space Shooter Template FREE/Scenes/Demo_Scene.unity
     guid: d31945966fedec24fa8cf028f485e539
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: 23196b9b8b602734e8d2b22d4d230b29
   m_configObjects: {}

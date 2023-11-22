@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using Photon.Pun;
 
 /// <summary>
 /// This script generates an enemy wave. It defines how many enemies will be emerging, their speed and emerging interval. 
@@ -80,7 +81,7 @@ public class Wave : MonoBehaviour {
             StartCoroutine(CreateEnemyWave());
         }
         else if (!Loop)
-            Destroy(gameObject); 
+            PhotonNetwork.Destroy(gameObject); 
     }
 
     void OnDrawGizmos()  
